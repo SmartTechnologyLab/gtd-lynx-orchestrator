@@ -1,0 +1,18 @@
+{
+  "name": "gtd-lynx-orchestrator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Multi-Agent AI Orchestrator for GTD mobile app on Lynx",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "orchestrate": "npm run start --workspace=packages/orchestrator",
+    "dev:app": "npm run dev --workspace=packages/app",
+    "build": "npm run build --workspace=packages/orchestrator"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "MIT"
+}
